@@ -1,0 +1,13 @@
+D:\C#Project\Patterns\Chain\bin\Debug\netcoreapp3.1\Chain.exe
+D:\C#Project\Patterns\Chain\bin\Debug\netcoreapp3.1\Chain.deps.json
+D:\C#Project\Patterns\Chain\bin\Debug\netcoreapp3.1\Chain.runtimeconfig.json
+D:\C#Project\Patterns\Chain\bin\Debug\netcoreapp3.1\Chain.runtimeconfig.dev.json
+D:\C#Project\Patterns\Chain\bin\Debug\netcoreapp3.1\Chain.dll
+D:\C#Project\Patterns\Chain\bin\Debug\netcoreapp3.1\Chain.pdb
+D:\C#Project\Patterns\Chain\obj\Debug\netcoreapp3.1\Chain.csprojAssemblyReference.cache
+D:\C#Project\Patterns\Chain\obj\Debug\netcoreapp3.1\Chain.AssemblyInfoInputs.cache
+D:\C#Project\Patterns\Chain\obj\Debug\netcoreapp3.1\Chain.AssemblyInfo.cs
+D:\C#Project\Patterns\Chain\obj\Debug\netcoreapp3.1\Chain.csproj.CoreCompileInputs.cache
+D:\C#Project\Patterns\Chain\obj\Debug\netcoreapp3.1\Chain.dll
+D:\C#Project\Patterns\Chain\obj\Debug\netcoreapp3.1\Chain.pdb
+D:\C#Project\Patterns\Chain\obj\Debug\netcoreapp3.1\Chain.genruntimeconfig.cache
