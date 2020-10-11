@@ -4,10 +4,10 @@ using System.Text;
 
 namespace Chain
 {
-    interface AccountsChain
+    interface IAccountsChain
     {
         #nullable enable
-        public AccountsChain? Next { get; set; }
+        public IAccountsChain? Next { get; set; }
         #nullable disable
 
         public void Pay(int amount);

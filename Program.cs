@@ -6,26 +6,25 @@ namespace Chain
     {
         static void Main(string[] args)
         {
-            AccountsChain payment = new Bank("Bank", 300, new PayPal("Paypal", 200, new Bitcoin("Bitcoin", 700)));
-            payment.Pay(20);
+            IAccountsChain payment = new Account("Bank", 100, new Account("Paypal", 200, new Account("Bitcoin", 700)));
+            payment.Pay(100);
 
             Console.ReadKey();
         }
 
-
-        class Account : AccountsChain
+        class Account : IAccountsChain
         {
             public string m_Name;
             public int m_Balance;
-#nullable enable
-            private AccountsChain? _next;
-#nullable disable
-            public AccountsChain Next  // read-write instance property
+            #nullable enable
+            private IAccountsChain? m_Next;
+            #nullable disable
+            public IAccountsChain Next 
             {
-                get => _next;
-                set => _next = value;
+                get => m_Next;
+                set => m_Next = value;
             }
-            public Account(string name, int balance, AccountsChain next = null)
+            public Account(string name, int balance, IAccountsChain next = null)
             {
                 m_Name = name;
                 m_Balance = balance;
@@ -49,27 +48,6 @@ namespace Chain
                 return m_Balance >= amount;
             }
         }
-
-
-
-        #region Конкретные обработчики
-        class Bank : Account
-        {
-            public Bank(string name, int balance, AccountsChain next = null) : base(name, balance, next) { }
-        }
-        class PayPal : Account
-        {
-            public PayPal(string name, int balance, AccountsChain next = null) : base(name, balance, next) { }
-        }
-        class Bitcoin : Account
-        {
-            public Bitcoin(string name, int balance, AccountsChain next = null) : base(name, balance, next) { }
-        }
-        #endregion
-
-
-
     }
 
-  
 }
